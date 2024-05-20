@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		17E7C721A5D18F2ED7F53C00 /* Pods_wordApp1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70B03BEEBDC6774BB61ECFF1 /* Pods_wordApp1.framework */; };
+		9E0FB4052BFA64C800049CAE /* wordApp1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0FB4042BFA64C800049CAE /* wordApp1App.swift */; };
+		9E0FB4072BFA64C800049CAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0FB4062BFA64C800049CAE /* ContentView.swift */; };
+		9E0FB4092BFA64C900049CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E0FB4082BFA64C900049CAE /* Assets.xcassets */; };
+		9E0FB40C2BFA64C900049CAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E0FB40B2BFA64C900049CAE /* Preview Assets.xcassets */; };
+		9E0FB4132BFA658900049CAE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E0FB4122BFA658900049CAE /* GoogleService-Info.plist */; };
+		9E98911B2BFB656B000CA91E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E98911A2BFB656B000CA91E /* LoginView.swift */; };
+		9E98911D2BFB7C01000CA91E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E98911C2BFB7C01000CA91E /* RegisterView.swift */; };
+		9E98911F2BFB7C78000CA91E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E98911E2BFB7C78000CA91E /* HeaderView.swift */; };
+		9E9891212BFB83D6000CA91E /* BigButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9891202BFB83D6000CA91E /* BigButtonView.swift */; };
+		9E9891232BFB86D1000CA91E /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9891222BFB86D0000CA91E /* LoginViewViewModel.swift */; };
+		9E9891252BFB8CDC000CA91E /* RegisterViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9891242BFB8CDC000CA91E /* RegisterViewViewModel.swift */; };
+		9E9891272BFB913B000CA91E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9891262BFB913B000CA91E /* User.swift */; };
+		9E9891292BFB9301000CA91E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9891282BFB9301000CA91E /* Extensions.swift */; };
+		9E98912B2BFB9433000CA91E /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E98912A2BFB9433000CA91E /* MainViewViewModel.swift */; };
+		9E98912D2BFB9551000CA91E /* BView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E98912C2BFB9551000CA91E /* BView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		562FE15115279EACDE2755EE /* Pods-wordApp1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wordApp1.debug.xcconfig"; path = "Target Support Files/Pods-wordApp1/Pods-wordApp1.debug.xcconfig"; sourceTree = "<group>"; };
+		70B03BEEBDC6774BB61ECFF1 /* Pods_wordApp1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wordApp1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E0FB4012BFA64C800049CAE /* wordApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wordApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E0FB4042BFA64C800049CAE /* wordApp1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordApp1App.swift; sourceTree = "<group>"; };
+		9E0FB4062BFA64C800049CAE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9E0FB4082BFA64C900049CAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9E0FB40B2BFA64C900049CAE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9E0FB4122BFA658900049CAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9E98911A2BFB656B000CA91E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		9E98911C2BFB7C01000CA91E /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		9E98911E2BFB7C78000CA91E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		9E9891202BFB83D6000CA91E /* BigButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigButtonView.swift; sourceTree = "<group>"; };
+		9E9891222BFB86D0000CA91E /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
+		9E9891242BFB8CDC000CA91E /* RegisterViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewViewModel.swift; sourceTree = "<group>"; };
+		9E9891262BFB913B000CA91E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		9E9891282BFB9301000CA91E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9E98912A2BFB9433000CA91E /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
+		9E98912C2BFB9551000CA91E /* BView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BView.swift; sourceTree = "<group>"; };
+		D56F13803B823D0DC7E90803 /* Pods-wordApp1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wordApp1.release.xcconfig"; path = "Target Support Files/Pods-wordApp1/Pods-wordApp1.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E0FB3FE2BFA64C800049CAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17E7C721A5D18F2ED7F53C00 /* Pods_wordApp1.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46B12A866CB31100206C29F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				562FE15115279EACDE2755EE /* Pods-wordApp1.debug.xcconfig */,
+				D56F13803B823D0DC7E90803 /* Pods-wordApp1.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		866F8C153CECF6D61328AE0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70B03BEEBDC6774BB61ECFF1 /* Pods_wordApp1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E0FB3F82BFA64C800049CAE = {
+			isa = PBXGroup;
+			children = (
+				9E0FB4032BFA64C800049CAE /* wordApp1 */,
+				9E9891192BFB6441000CA91E /* Others */,
+				9E0FB4022BFA64C800049CAE /* Products */,
+				46B12A866CB31100206C29F1 /* Pods */,
+				866F8C153CECF6D61328AE0B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9E0FB4022BFA64C800049CAE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E0FB4012BFA64C800049CAE /* wordApp1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E0FB4032BFA64C800049CAE /* wordApp1 */ = {
+			isa = PBXGroup;
+			children = (
+				9E9891162BFB641F000CA91E /* Views */,
+				9E9891172BFB6425000CA91E /* Models */,
+				9E9891182BFB6429000CA91E /* ViewModels */,
+				9E0FB40A2BFA64C900049CAE /* Preview Content */,
+			);
+			path = wordApp1;
+			sourceTree = "<group>";
+		};
+		9E0FB40A2BFA64C900049CAE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9E0FB40B2BFA64C900049CAE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9E9891162BFB641F000CA91E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9E0FB4062BFA64C800049CAE /* ContentView.swift */,
+				9E98911A2BFB656B000CA91E /* LoginView.swift */,
+				9E98911C2BFB7C01000CA91E /* RegisterView.swift */,
+				9E98911E2BFB7C78000CA91E /* HeaderView.swift */,
+				9E9891202BFB83D6000CA91E /* BigButtonView.swift */,
+				9E98912C2BFB9551000CA91E /* BView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9E9891172BFB6425000CA91E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9E9891262BFB913B000CA91E /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9E9891182BFB6429000CA91E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9E9891222BFB86D0000CA91E /* LoginViewViewModel.swift */,
+				9E9891242BFB8CDC000CA91E /* RegisterViewViewModel.swift */,
+				9E98912A2BFB9433000CA91E /* MainViewViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9E9891192BFB6441000CA91E /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				9E0FB4082BFA64C900049CAE /* Assets.xcassets */,
+				9E0FB4042BFA64C800049CAE /* wordApp1App.swift */,
+				9E0FB4122BFA658900049CAE /* GoogleService-Info.plist */,
+				9E9891282BFB9301000CA91E /* Extensions.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E0FB4002BFA64C800049CAE /* wordApp1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E0FB40F2BFA64C900049CAE /* Build configuration list for PBXNativeTarget "wordApp1" */;
+			buildPhases = (
+				E4B0587F53A287FE3C2BFA46 /* [CP] Check Pods Manifest.lock */,
+				9E0FB3FD2BFA64C800049CAE /* Sources */,
+				9E0FB3FE2BFA64C800049CAE /* Frameworks */,
+				9E0FB3FF2BFA64C800049CAE /* Resources */,
+				3A7A816D3C8AC5E1F8B29C27 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wordApp1;
+			productName = wordApp1;
+			productReference = 9E0FB4012BFA64C800049CAE /* wordApp1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E0FB3F92BFA64C800049CAE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					9E0FB4002BFA64C800049CAE = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 9E0FB3FC2BFA64C800049CAE /* Build configuration list for PBXProject "wordApp1" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E0FB3F82BFA64C800049CAE;
+			productRefGroup = 9E0FB4022BFA64C800049CAE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E0FB4002BFA64C800049CAE /* wordApp1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E0FB3FF2BFA64C800049CAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E0FB40C2BFA64C900049CAE /* Preview Assets.xcassets in Resources */,
+				9E0FB4092BFA64C900049CAE /* Assets.xcassets in Resources */,
+				9E0FB4132BFA658900049CAE /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A7A816D3C8AC5E1F8B29C27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wordApp1/Pods-wordApp1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-wordApp1/Pods-wordApp1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-wordApp1/Pods-wordApp1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4B0587F53A287FE3C2BFA46 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wordApp1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E0FB3FD2BFA64C800049CAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E98911F2BFB7C78000CA91E /* HeaderView.swift in Sources */,
+				9E9891232BFB86D1000CA91E /* LoginViewViewModel.swift in Sources */,
+				9E98912B2BFB9433000CA91E /* MainViewViewModel.swift in Sources */,
+				9E9891252BFB8CDC000CA91E /* RegisterViewViewModel.swift in Sources */,
+				9E9891212BFB83D6000CA91E /* BigButtonView.swift in Sources */,
+				9E98911B2BFB656B000CA91E /* LoginView.swift in Sources */,
+				9E9891292BFB9301000CA91E /* Extensions.swift in Sources */,
+				9E98912D2BFB9551000CA91E /* BView.swift in Sources */,
+				9E9891272BFB913B000CA91E /* User.swift in Sources */,
+				9E98911D2BFB7C01000CA91E /* RegisterView.swift in Sources */,
+				9E0FB4072BFA64C800049CAE /* ContentView.swift in Sources */,
+				9E0FB4052BFA64C800049CAE /* wordApp1App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9E0FB40D2BFA64C900049CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9E0FB40E2BFA64C900049CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E0FB4102BFA64C900049CAE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 562FE15115279EACDE2755EE /* Pods-wordApp1.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"wordApp1/Preview Content\"";
+				DEVELOPMENT_TEAM = 3Y845XZRBR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Kelime;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.serenaygunes.wordApp1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E0FB4112BFA64C900049CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D56F13803B823D0DC7E90803 /* Pods-wordApp1.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"wordApp1/Preview Content\"";
+				DEVELOPMENT_TEAM = 3Y845XZRBR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Kelime;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.serenaygunes.wordApp1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E0FB3FC2BFA64C800049CAE /* Build configuration list for PBXProject "wordApp1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E0FB40D2BFA64C900049CAE /* Debug */,
+				9E0FB40E2BFA64C900049CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E0FB40F2BFA64C900049CAE /* Build configuration list for PBXNativeTarget "wordApp1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E0FB4102BFA64C900049CAE /* Debug */,
+				9E0FB4112BFA64C900049CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E0FB3F92BFA64C800049CAE /* Project object */;
+}
