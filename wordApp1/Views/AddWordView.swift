@@ -7,8 +7,11 @@
 
 import SwiftUI
 import Firebase
+import FirebaseFirestore
 
 struct AddWordView: View {
+    @StateObject var view2Model = ProfileViewViewModel()
+    
     @StateObject private var viewModel = AddWordViewModel()
     @State private var showImagePicker: Bool = false
 
@@ -50,6 +53,9 @@ struct AddWordView: View {
                     .padding()
                     .background(Color.blue)
                     .cornerRadius(10)
+                
+            BigButton(title: "Çıkış Yap"){ view2Model.logout()}
+
             }
             .padding()
 

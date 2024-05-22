@@ -9,9 +9,10 @@ target 'wordApp1' do
   pod 'Firebase/Firestore'
   pod 'Firebase/Storage'
   pod 'Firebase/Database'
-
+  pod 'FirebaseFirestoreSwift'
   
   # Diğer modüller eklenmez
   # pod 'Firebase/Analytics'
+   
 
 end
