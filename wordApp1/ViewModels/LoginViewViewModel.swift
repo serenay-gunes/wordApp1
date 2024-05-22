@@ -5,6 +5,7 @@
 //  Created by Serenay Güneş on 20.05.2024.
 //
 
+import FirebaseAuth
 import Foundation
 
 
@@ -22,7 +23,7 @@ class LoginViewViewModel: ObservableObject{
         guard validate() else{
             return
         }
-                
+        Auth.auth().signIn(withEmail: email, password: password)
     }
     
     

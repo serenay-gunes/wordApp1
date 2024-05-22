@@ -14,23 +14,21 @@ struct ContentView: View {
     var body: some View {
         
         if viewModel.isSignedIn, !viewModel.currentUserId.isEmpty{
-            BView()
+            ProfileView()
         } else {
             LoginView()
         }
     }
         
         
-        
-       /* Te xt("Hello, Firebase!")
-            .onAppear {
-                // Firebase kullanımı örneği
-                let auth = Auth.auth()
-                let db = Firestore.firestore()
-                let storage = Storage.storage()
-                print(auth, db, storage)
-            }
-        */
+     
+//                // Firebase kullanımı örneği
+//                let auth = Auth.auth()
+//                let db = Firestore.firestore()
+//                let storage = Storage.storage()
+//                print(auth, db, storage)
+//            }
+//        
     }
 
 

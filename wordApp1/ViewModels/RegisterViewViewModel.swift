@@ -32,10 +32,14 @@ class RegisterViewViewModel: ObservableObject{
                 return
             }
             //insert metodu çağırılacak
-            
+            self?.insertUserRecord(id: userId)
             
         }
     }
+    
+    
+    
+    //BURADA COLLECTION OLUSTURUYOR
     
     private func insertUserRecord(id: String){
         let newUser = User(id: id, name: name, email: email, joined: Date().timeIntervalSince1970)

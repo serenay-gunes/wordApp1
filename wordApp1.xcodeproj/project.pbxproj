@@ -13,6 +13,10 @@
 		9E0FB4092BFA64C900049CAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E0FB4082BFA64C900049CAE /* Assets.xcassets */; };
 		9E0FB40C2BFA64C900049CAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E0FB40B2BFA64C900049CAE /* Preview Assets.xcassets */; };
 		9E0FB4132BFA658900049CAE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9E0FB4122BFA658900049CAE /* GoogleService-Info.plist */; };
+		9E2897222BFE1A5800781CE4 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2897212BFE1A5800781CE4 /* Word.swift */; };
+		9E2897242BFE1A9C00781CE4 /* AddWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2897232BFE1A9C00781CE4 /* AddWordView.swift */; };
+		9E2897262BFE1CB600781CE4 /* AddWordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2897252BFE1CB600781CE4 /* AddWordViewModel.swift */; };
+		9E2897282BFE1D5F00781CE4 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E2897272BFE1D5F00781CE4 /* ImagePicker.swift */; };
 		9E98911B2BFB656B000CA91E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E98911A2BFB656B000CA91E /* LoginView.swift */; };
 		9E98911D2BFB7C01000CA91E /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E98911C2BFB7C01000CA91E /* RegisterView.swift */; };
 		9E98911F2BFB7C78000CA91E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E98911E2BFB7C78000CA91E /* HeaderView.swift */; };
@@ -23,6 +27,8 @@
 		9E9891292BFB9301000CA91E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9891282BFB9301000CA91E /* Extensions.swift */; };
 		9E98912B2BFB9433000CA91E /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E98912A2BFB9433000CA91E /* MainViewViewModel.swift */; };
 		9E98912D2BFB9551000CA91E /* BView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E98912C2BFB9551000CA91E /* BView.swift */; };
+		9E98912F2BFBADA0000CA91E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E98912E2BFBADA0000CA91E /* ProfileView.swift */; };
+		9E9891312BFBADBA000CA91E /* ProfileViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E9891302BFBADBA000CA91E /* ProfileViewViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,10 @@
 		9E0FB4082BFA64C900049CAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E0FB40B2BFA64C900049CAE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9E0FB4122BFA658900049CAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9E2897212BFE1A5800781CE4 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		9E2897232BFE1A9C00781CE4 /* AddWordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordView.swift; sourceTree = "<group>"; };
+		9E2897252BFE1CB600781CE4 /* AddWordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWordViewModel.swift; sourceTree = "<group>"; };
+		9E2897272BFE1D5F00781CE4 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		9E98911A2BFB656B000CA91E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		9E98911C2BFB7C01000CA91E /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		9E98911E2BFB7C78000CA91E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -44,6 +54,8 @@
 		9E9891282BFB9301000CA91E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9E98912A2BFB9433000CA91E /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
 		9E98912C2BFB9551000CA91E /* BView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BView.swift; sourceTree = "<group>"; };
+		9E98912E2BFBADA0000CA91E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		9E9891302BFBADBA000CA91E /* ProfileViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewViewModel.swift; sourceTree = "<group>"; };
 		D56F13803B823D0DC7E90803 /* Pods-wordApp1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wordApp1.release.xcconfig"; path = "Target Support Files/Pods-wordApp1/Pods-wordApp1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +135,8 @@
 				9E98911E2BFB7C78000CA91E /* HeaderView.swift */,
 				9E9891202BFB83D6000CA91E /* BigButtonView.swift */,
 				9E98912C2BFB9551000CA91E /* BView.swift */,
+				9E98912E2BFBADA0000CA91E /* ProfileView.swift */,
+				9E2897232BFE1A9C00781CE4 /* AddWordView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -131,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				9E9891262BFB913B000CA91E /* User.swift */,
+				9E2897212BFE1A5800781CE4 /* Word.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -141,6 +156,8 @@
 				9E9891222BFB86D0000CA91E /* LoginViewViewModel.swift */,
 				9E9891242BFB8CDC000CA91E /* RegisterViewViewModel.swift */,
 				9E98912A2BFB9433000CA91E /* MainViewViewModel.swift */,
+				9E9891302BFBADBA000CA91E /* ProfileViewViewModel.swift */,
+				9E2897252BFE1CB600781CE4 /* AddWordViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -152,6 +169,7 @@
 				9E0FB4042BFA64C800049CAE /* wordApp1App.swift */,
 				9E0FB4122BFA658900049CAE /* GoogleService-Info.plist */,
 				9E9891282BFB9301000CA91E /* Extensions.swift */,
+				9E2897272BFE1D5F00781CE4 /* ImagePicker.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -272,6 +290,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E98911F2BFB7C78000CA91E /* HeaderView.swift in Sources */,
+				9E98912F2BFBADA0000CA91E /* ProfileView.swift in Sources */,
+				9E2897222BFE1A5800781CE4 /* Word.swift in Sources */,
+				9E2897282BFE1D5F00781CE4 /* ImagePicker.swift in Sources */,
 				9E9891232BFB86D1000CA91E /* LoginViewViewModel.swift in Sources */,
 				9E98912B2BFB9433000CA91E /* MainViewViewModel.swift in Sources */,
 				9E9891252BFB8CDC000CA91E /* RegisterViewViewModel.swift in Sources */,
@@ -281,6 +302,9 @@
 				9E98912D2BFB9551000CA91E /* BView.swift in Sources */,
 				9E9891272BFB913B000CA91E /* User.swift in Sources */,
 				9E98911D2BFB7C01000CA91E /* RegisterView.swift in Sources */,
+				9E2897262BFE1CB600781CE4 /* AddWordViewModel.swift in Sources */,
+				9E2897242BFE1A9C00781CE4 /* AddWordView.swift in Sources */,
+				9E9891312BFBADBA000CA91E /* ProfileViewViewModel.swift in Sources */,
 				9E0FB4072BFA64C800049CAE /* ContentView.swift in Sources */,
 				9E0FB4052BFA64C800049CAE /* wordApp1App.swift in Sources */,
 			);
