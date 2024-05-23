@@ -6,64 +6,51 @@
 //
 
 
+
+
 import SwiftUI
 
 struct QuizView: View {
     @StateObject private var viewModel = QuizViewViewModel()
-
+    
     var body: some View {
-        NavigationView {
-            VStack {
-                if viewModel.isLoading {
-                    ProgressView("Yükleniyor...")
-                } else if !viewModel.errorMessage.isEmpty {
-                    Text(viewModel.errorMessage)
-                        .foregroundColor(.red)
-                        .padding()
-                } else if let currentWord = viewModel.currentWord {
-                    VStack(spacing: 20) {
-                        Text(currentWord.english)
-                            .font(.largeTitle)
-                            .padding()
-
-                        Button(action: {
-                            viewModel.markCorrect()
-                        }) {
-                            Text("Doğru")
-                                .foregroundColor(.white)
-                                .padding()
-                                .background(Color.green)
-                                .cornerRadius(10)
-                        }
-
-                        Button(action: {
-                            viewModel.markIncorrect()
-                        }) {
-                            Text("Yanlış")
-                                .foregroundColor(.white)
-                                .padding()
-                                .background(Color.red)
-                                .cornerRadius(10)
-                        }
-
-                        Spacer()
-                    }
+        VStack {
+            if let currentWord = viewModel.currentWord {
+                Text(currentWord.english)
+                    .font(.largeTitle)
                     .padding()
-                } else {
-                    Text("Quiz tamamlandı!")
-                        .font(.largeTitle)
-                        .padding()
+                
+                ForEach(viewModel.options, id: \.self) { option in
+                    Button(action: {
+                        viewModel.checkAnswer(option)
+                    }) {
+                        Text(option)
+                            .padding()
+                            .background(Color.blue)
+                            .foregroundColor(.white)
+                            .cornerRadius(8)
+                            .padding(.vertical, 2)
+                    }
                 }
+            } else {
+                Text("Yükleniyor...")
+                    .font(.largeTitle)
+                    .padding()
             }
-            .navigationTitle("Quiz")
-            .onAppear {
-                viewModel.fetchWords()
-            }
+        }
+        .alert(isPresented: $viewModel.showAlert) {
+            Alert(title: Text("Quiz Bitti"), message: Text(viewModel.alertMessage), dismissButton: .default(Text("Tamam"), action: {
+                viewModel.resetQuiz()
+            }))
+        }
+        .onAppear {
+            viewModel.fetchWords()
         }
     }
 }
 
-
-#Preview {
-  QuizView()
+struct QuizView_Previews: PreviewProvider {
+    static var previews: some View {
+        QuizView()
+    }
 }
