@@ -10,12 +10,12 @@ import SwiftUI
 struct HeaderView: View {
     var body: some View {
         ZStack{
-            Image("icon-4")
+            Image("")
                 .resizable()
                 .frame(width: 150, height: 150)
                 .scaledToFit() // Görselin orantılı şekilde yeniden boyutlandırılması
 
-            Text("DenemeApp")
+            Text("ProFeshWords")
                 .font(.system(size: 25))
                 .fontWeight(.bold)
                 .foregroundColor(.black) // Metin rengi ekleme

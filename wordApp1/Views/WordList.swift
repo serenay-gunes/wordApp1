@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 struct WordListView: View {
     @StateObject private var viewModel = WordListViewModel()
 
@@ -33,6 +31,8 @@ struct WordListView: View {
                         }
                     }
                     .padding()
+                    .background(Color.blue.opacity(0.2)) // Light blue background
+                    .cornerRadius(10) // Optional: to round the corners
                 }
                 .navigationTitle("Kelimelerim")
             }
@@ -42,7 +42,6 @@ struct WordListView: View {
         }
     }
 }
-
 
 #Preview {
     WordListView()

@@ -11,7 +11,6 @@ import FirebaseFirestore
 
 struct AddWordView: View {
     @StateObject var view2Model = ProfileViewViewModel()
-    
     @StateObject private var viewModel = AddWordViewModel()
     @State private var showImagePicker: Bool = false
 
@@ -20,22 +19,37 @@ struct AddWordView: View {
             TextField("İngilizce Kelime", text: $viewModel.englishWord)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
+                .background(Color.blue.opacity(0.2)) // Light blue background color
+                .cornerRadius(8)
+                .shadow(color: Color.gray.opacity(0.4), radius: 3, x: 1, y: 2) // Shadow for text field
 
             TextField("Türkçe Karşılığı", text: $viewModel.turkishWord)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
+                .background(Color.blue.opacity(0.2)) // Light blue background color
+                .cornerRadius(8)
+                .shadow(color: Color.gray.opacity(0.4), radius: 3, x: 1, y: 2) // Shadow for text field
 
             TextField("Cümle 1", text: $viewModel.sentence1)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
+                .background(Color.blue.opacity(0.2)) // Light blue background color
+                .cornerRadius(8)
+                .shadow(color: Color.gray.opacity(0.4), radius: 3, x: 1, y: 2) // Shadow for text field
 
             TextField("Cümle 2", text: $viewModel.sentence2)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
+                .background(Color.blue.opacity(0.2)) // Light blue background color
+                .cornerRadius(8)
+                .shadow(color: Color.gray.opacity(0.4), radius: 3, x: 1, y: 2) // Shadow for text field
 
             TextField("Cümle 3", text: $viewModel.sentence3)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
+                .background(Color.blue.opacity(0.2)) // Light blue background color
+                .cornerRadius(8)
+                .shadow(color: Color.gray.opacity(0.4), radius: 3, x: 1, y: 2) // Shadow for text field
 
             Button(action: {
                 self.showImagePicker = true
@@ -43,9 +57,10 @@ struct AddWordView: View {
                 Text("Resim Yükle")
             }
             .padding()
-            .sheet(isPresented: $showImagePicker) {
-                ImagePicker(image: self.$viewModel.image)
-            }
+            .background(Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(10)
+            .shadow(color: Color.gray.opacity(0.4), radius: 3, x: 1, y: 2) // Shadow for button
 
             Button(action: viewModel.addWord) {
                 Text("Kelime Ekle")
@@ -53,21 +68,19 @@ struct AddWordView: View {
                     .padding()
                     .background(Color.blue)
                     .cornerRadius(10)
-                
-            BigButton(title: "Çıkış Yap"){ view2Model.logout()}
-
+                    .shadow(color: Color.gray.opacity(0.4), radius: 3, x: 1, y: 2) // Shadow for button
             }
             .padding()
 
             Spacer()
         }
         .padding()
+        .background(Color(.systemGray6).edgesIgnoringSafeArea(.all)) // Soft grey background
         .alert(isPresented: $viewModel.showAlert) {
             Alert(title: Text("Bilgi"), message: Text(viewModel.alertMessage), dismissButton: .default(Text("Tamam")))
         }
     }
 }
-
 
 struct AddWordView_Previews: PreviewProvider {
     static var previews: some View {

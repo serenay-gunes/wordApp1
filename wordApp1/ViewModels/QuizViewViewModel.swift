@@ -19,7 +19,7 @@ class QuizViewViewModel: ObservableObject {
     @Published var showAlert: Bool = false
     @Published var alertMessage: String = ""
     @Published var options: [String] = []
-    @Published var quizSize: Int = 10 // Varsayılan quiz boyutu
+    @Published var quizSize: Int = 4 // Varsayılan quiz boyutu
     
  
     
@@ -37,7 +37,7 @@ class QuizViewViewModel: ObservableObject {
     func loadQuizSize() {
         quizSize = UserDefaults.standard.integer(forKey: "QuizSize")
         if quizSize == 0 {
-            quizSize = 10 // Varsayılan değer
+            quizSize = 4// Varsayılan değer
         }
     }
     
