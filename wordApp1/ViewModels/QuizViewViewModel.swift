@@ -11,6 +11,7 @@ import Foundation
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 import Combine
+import SwiftUI
 
 class QuizViewViewModel: ObservableObject {
     @Published var words: [Word] = []
@@ -19,6 +20,8 @@ class QuizViewViewModel: ObservableObject {
     @Published var showAlert: Bool = false
     @Published var alertMessage: String = ""
     @Published var options: [String] = []
+    
+    @AppStorage("quizSize") private var quizSize: Int = 10
     
     private var cancellables = Set<AnyCancellable>()
     
@@ -29,6 +32,7 @@ class QuizViewViewModel: ObservableObject {
     func fetchWords() {
         let db = Firestore.firestore()
         db.collection("words")
+            .limit(to: quizSize) // Kullanıcının belirlediği quiz boyutunu kullan
             .getDocuments { (querySnapshot, error) in
                 if let error = error {
                     self.alertMessage = "Kelimeler alınırken hata oluştu: \(error.localizedDescription)"

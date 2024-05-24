@@ -7,7 +7,6 @@
 
 
 
-
 import SwiftUI
 
 struct QuizView: View {

@@ -1,14 +1,8 @@
-//
-//  SettingsView.swift
-//  wordApp1
-//
-//  Created by Serenay Güneş on 22.05.2024.
-//
-
 import SwiftUI
 
 struct SettingsView: View {
-    @State private var quizSize: Int = 10
+    @AppStorage("quizSize") private var quizSize: Int = 10
+    @State private var showAlert: Bool = false
 
     var body: some View {
         Form {
@@ -19,13 +13,17 @@ struct SettingsView: View {
             }
 
             Button(action: {
-                // Quiz boyutu ayarlarını kaydet
+                // Quiz boyutunu kaydet
+                showAlert = true
             }) {
                 Text("Kaydet")
                     .foregroundColor(.white)
                     .padding()
                     .background(Color.blue)
                     .cornerRadius(10)
+            }
+            .alert(isPresented: $showAlert) {
+                Alert(title: Text("Ayarlar Kaydedildi"), message: Text("Quiz boyutu \(quizSize) olarak ayarlandı."), dismissButton: .default(Text("Tamam")))
             }
         }
         .navigationTitle("Ayarlar")

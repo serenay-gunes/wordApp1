@@ -33,8 +33,9 @@
 		9ECC63022BFE4D3B0030AFE2 /* WordListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC63012BFE4D3B0030AFE2 /* WordListViewModel.swift */; };
 		9ECC63042BFE4D490030AFE2 /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ECC63032BFE4D490030AFE2 /* WordList.swift */; };
 		9EEC1DCC2BFE5E380063C83B /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEC1DCB2BFE5E380063C83B /* QuizView.swift */; };
-		9EEC1DCE2BFE5E8A0063C83B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEC1DCD2BFE5E8A0063C83B /* SettingsView.swift */; };
 		9EEC1DD02BFE5F240063C83B /* QuizViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEC1DCF2BFE5F240063C83B /* QuizViewViewModel.swift */; };
+		9EFBB94A2C00B90E0038CE4D /* QuizScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFBB9492C00B90E0038CE4D /* QuizScore.swift */; };
+		9EFBB9502C00D09E0038CE4D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFBB94F2C00D09E0038CE4D /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,8 +67,9 @@
 		9ECC63012BFE4D3B0030AFE2 /* WordListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewModel.swift; sourceTree = "<group>"; };
 		9ECC63032BFE4D490030AFE2 /* WordList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
 		9EEC1DCB2BFE5E380063C83B /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
-		9EEC1DCD2BFE5E8A0063C83B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		9EEC1DCF2BFE5F240063C83B /* QuizViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewViewModel.swift; sourceTree = "<group>"; };
+		9EFBB9492C00B90E0038CE4D /* QuizScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizScore.swift; sourceTree = "<group>"; };
+		9EFBB94F2C00D09E0038CE4D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		D56F13803B823D0DC7E90803 /* Pods-wordApp1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wordApp1.release.xcconfig"; path = "Target Support Files/Pods-wordApp1/Pods-wordApp1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,7 +154,7 @@
 				9E2897292BFE382300781CE4 /* LoadingView.swift */,
 				9ECC63032BFE4D490030AFE2 /* WordList.swift */,
 				9EEC1DCB2BFE5E380063C83B /* QuizView.swift */,
-				9EEC1DCD2BFE5E8A0063C83B /* SettingsView.swift */,
+				9EFBB94F2C00D09E0038CE4D /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,6 +164,7 @@
 			children = (
 				9E9891262BFB913B000CA91E /* User.swift */,
 				9E2897212BFE1A5800781CE4 /* Word.swift */,
+				9EFBB9492C00B90E0038CE4D /* QuizScore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -316,12 +319,13 @@
 				9EEC1DCC2BFE5E380063C83B /* QuizView.swift in Sources */,
 				9E9891252BFB8CDC000CA91E /* RegisterViewViewModel.swift in Sources */,
 				9E9891212BFB83D6000CA91E /* BigButtonView.swift in Sources */,
-				9EEC1DCE2BFE5E8A0063C83B /* SettingsView.swift in Sources */,
+				9EFBB94A2C00B90E0038CE4D /* QuizScore.swift in Sources */,
 				9ECC63042BFE4D490030AFE2 /* WordList.swift in Sources */,
 				9E98911B2BFB656B000CA91E /* LoginView.swift in Sources */,
 				9E9891292BFB9301000CA91E /* Extensions.swift in Sources */,
 				9E98912D2BFB9551000CA91E /* BView.swift in Sources */,
 				9E9891272BFB913B000CA91E /* User.swift in Sources */,
+				9EFBB9502C00D09E0038CE4D /* SettingsView.swift in Sources */,
 				9E98911D2BFB7C01000CA91E /* RegisterView.swift in Sources */,
 				9E2897262BFE1CB600781CE4 /* AddWordViewModel.swift in Sources */,
 				9ECC63022BFE4D3B0030AFE2 /* WordListViewModel.swift in Sources */,
