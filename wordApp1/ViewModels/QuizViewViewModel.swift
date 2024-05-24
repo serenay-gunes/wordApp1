@@ -21,7 +21,7 @@ class QuizViewViewModel: ObservableObject {
     @Published var options: [String] = []
     @Published var quizSize: Int = 10 // Varsayılan quiz boyutu
     
-    @AppStorage("quizSize") private var quizSize: Int = 10
+ 
     
     private var cancellables = Set<AnyCancellable>()
     private var userId: String? {
