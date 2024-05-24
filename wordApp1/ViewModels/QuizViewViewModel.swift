@@ -1,12 +1,3 @@
-//
-//  QuizViewViewModel.swift
-//  wordApp1
-//
-//  Created by Serenay Güneş on 22.05.2024.
-//
-
-
-
 import Foundation
 import FirebaseFirestore
 import FirebaseFirestoreSwift
@@ -80,6 +71,7 @@ class QuizViewViewModel: ObservableObject {
     func endQuiz() {
         alertMessage = "Quiz bitti! Doğru cevaplar: \(correctAnswers) / \(words.count)"
         showAlert = true
+        saveQuizScore()
     }
     
     func resetQuiz() {
@@ -87,5 +79,16 @@ class QuizViewViewModel: ObservableObject {
         correctAnswers = 0
         words.shuffle()
         setOptions()
+    }
+    
+    private func saveQuizScore() {
+        let db = Firestore.firestore()
+        let score = QuizScore(date: Date(), correctAnswers: correctAnswers, totalQuestions: words.count)
+        
+        do {
+            try db.collection("quizScores").addDocument(from: score)
+        } catch let error {
+            print("Error saving quiz score: \(error.localizedDescription)")
+        }
     }
 }

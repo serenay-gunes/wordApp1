@@ -36,6 +36,8 @@
 		9EEC1DD02BFE5F240063C83B /* QuizViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEC1DCF2BFE5F240063C83B /* QuizViewViewModel.swift */; };
 		9EFBB94A2C00B90E0038CE4D /* QuizScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFBB9492C00B90E0038CE4D /* QuizScore.swift */; };
 		9EFBB9502C00D09E0038CE4D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFBB94F2C00D09E0038CE4D /* SettingsView.swift */; };
+		9EFBB9522C00D3190038CE4D /* ScoresViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFBB9512C00D3190038CE4D /* ScoresViewViewModel.swift */; };
+		9EFBB9542C00D32A0038CE4D /* ScoresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFBB9532C00D32A0038CE4D /* ScoresView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		9EEC1DCF2BFE5F240063C83B /* QuizViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewViewModel.swift; sourceTree = "<group>"; };
 		9EFBB9492C00B90E0038CE4D /* QuizScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizScore.swift; sourceTree = "<group>"; };
 		9EFBB94F2C00D09E0038CE4D /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		9EFBB9512C00D3190038CE4D /* ScoresViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresViewViewModel.swift; sourceTree = "<group>"; };
+		9EFBB9532C00D32A0038CE4D /* ScoresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresView.swift; sourceTree = "<group>"; };
 		D56F13803B823D0DC7E90803 /* Pods-wordApp1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wordApp1.release.xcconfig"; path = "Target Support Files/Pods-wordApp1/Pods-wordApp1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +159,7 @@
 				9ECC63032BFE4D490030AFE2 /* WordList.swift */,
 				9EEC1DCB2BFE5E380063C83B /* QuizView.swift */,
 				9EFBB94F2C00D09E0038CE4D /* SettingsView.swift */,
+				9EFBB9532C00D32A0038CE4D /* ScoresView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 				9E9891302BFBADBA000CA91E /* ProfileViewViewModel.swift */,
 				9E2897252BFE1CB600781CE4 /* AddWordViewModel.swift */,
 				9ECC63012BFE4D3B0030AFE2 /* WordListViewModel.swift */,
+				9EFBB9512C00D3190038CE4D /* ScoresViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -314,6 +320,7 @@
 				9E98912F2BFBADA0000CA91E /* ProfileView.swift in Sources */,
 				9E2897222BFE1A5800781CE4 /* Word.swift in Sources */,
 				9E2897282BFE1D5F00781CE4 /* ImagePicker.swift in Sources */,
+				9EFBB9542C00D32A0038CE4D /* ScoresView.swift in Sources */,
 				9E9891232BFB86D1000CA91E /* LoginViewViewModel.swift in Sources */,
 				9E98912B2BFB9433000CA91E /* MainViewViewModel.swift in Sources */,
 				9EEC1DCC2BFE5E380063C83B /* QuizView.swift in Sources */,
@@ -322,6 +329,7 @@
 				9EFBB94A2C00B90E0038CE4D /* QuizScore.swift in Sources */,
 				9ECC63042BFE4D490030AFE2 /* WordList.swift in Sources */,
 				9E98911B2BFB656B000CA91E /* LoginView.swift in Sources */,
+				9EFBB9522C00D3190038CE4D /* ScoresViewViewModel.swift in Sources */,
 				9E9891292BFB9301000CA91E /* Extensions.swift in Sources */,
 				9E98912D2BFB9551000CA91E /* BView.swift in Sources */,
 				9E9891272BFB913B000CA91E /* User.swift in Sources */,

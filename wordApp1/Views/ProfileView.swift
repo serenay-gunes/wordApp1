@@ -32,15 +32,15 @@ struct ProfileView: View {
                     viewModel.logout()
                 }
                 
-//                // ScoresView'a geçiş
-//                NavigationLink(destination: ScoresView()) {
-//                    Text("Geçmiş Skorlar")
-//                        .foregroundColor(.white)
-//                        .padding()
-//                        .background(Color.blue)
-//                        .cornerRadius(10)
-//                        .padding(.top, 10)
-//                }
+                // ScoresView'a geçiş
+                NavigationLink(destination: ScoresView()) {
+                    Text("Geçmiş Skorlar")
+                        .foregroundColor(.white)
+                        .padding()
+                        .background(Color.blue)
+                        .cornerRadius(10)
+                        .padding(.top, 10)
+                }
                 
             }
             .navigationTitle("Profil")
