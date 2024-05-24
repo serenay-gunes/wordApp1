@@ -1,9 +1,9 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @AppStorage("quizSize") private var quizSize: Int = 10
-    @State private var showAlert: Bool = false
-
+    @State private var quizSize: Int = UserDefaults.standard.integer(forKey: "QuizSize")
+    @State private var showAlert = false
+    
     var body: some View {
         Form {
             Section(header: Text("Quiz Ayarları")) {
@@ -11,10 +11,9 @@ struct SettingsView: View {
                     Text("Quiz Boyutu: \(quizSize)")
                 }
             }
-
+            
             Button(action: {
-                // Quiz boyutunu kaydet
-                showAlert = true
+                saveQuizSize()
             }) {
                 Text("Kaydet")
                     .foregroundColor(.white)
@@ -27,9 +26,19 @@ struct SettingsView: View {
             }
         }
         .navigationTitle("Ayarlar")
+        .alert(isPresented: $showAlert) {
+            Alert(title: Text("Quiz Boyutu Kaydedildi"), message: Text("Quiz boyutu \(quizSize) olarak kaydedildi."), dismissButton: .default(Text("Tamam")))
+        }
+    }
+    
+    func saveQuizSize() {
+        UserDefaults.standard.set(quizSize, forKey: "QuizSize")
+        showAlert = true
     }
 }
 
-#Preview {
-    SettingsView()
+struct SettingsView_Previews: PreviewProvider {
+    static var previews: some View {
+        SettingsView()
+    }
 }

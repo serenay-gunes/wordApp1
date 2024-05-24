@@ -1,8 +1,16 @@
+//
+//  QuizViewViewModel.swift
+//  wordApp1
+//
+//  Created by Serenay Güneş on 22.05.2024.
+//
+
+
 import Foundation
 import FirebaseFirestore
 import FirebaseFirestoreSwift
 import Combine
-import SwiftUI
+import FirebaseAuth
 
 class QuizViewViewModel: ObservableObject {
     @Published var words: [Word] = []
@@ -11,20 +19,33 @@ class QuizViewViewModel: ObservableObject {
     @Published var showAlert: Bool = false
     @Published var alertMessage: String = ""
     @Published var options: [String] = []
+    @Published var quizSize: Int = 10 // Varsayılan quiz boyutu
     
     @AppStorage("quizSize") private var quizSize: Int = 10
     
     private var cancellables = Set<AnyCancellable>()
+    private var userId: String? {
+        Auth.auth().currentUser?.uid
+    }
+    private var correctWordIds: Set<String> = [] // Doğru cevaplanan kelime kimliklerini saklar
     
     init() {
+        loadQuizSize()
         fetchWords()
+    }
+    
+    func loadQuizSize() {
+        quizSize = UserDefaults.standard.integer(forKey: "QuizSize")
+        if quizSize == 0 {
+            quizSize = 10 // Varsayılan değer
+        }
     }
     
     func fetchWords() {
         let db = Firestore.firestore()
         db.collection("words")
-            .limit(to: quizSize) // Kullanıcının belirlediği quiz boyutunu kullan
-            .getDocuments { (querySnapshot, error) in
+            .getDocuments { [weak self] (querySnapshot, error) in
+                guard let self = self else { return }
                 if let error = error {
                     self.alertMessage = "Kelimeler alınırken hata oluştu: \(error.localizedDescription)"
                     self.showAlert = true
@@ -32,13 +53,23 @@ class QuizViewViewModel: ObservableObject {
                 }
                 
                 if let querySnapshot = querySnapshot {
-                    self.words = querySnapshot.documents.compactMap { document in
+                    let allWords = querySnapshot.documents.compactMap { document in
                         try? document.data(as: Word.self)
                     }
-                    self.words.shuffle() // Kelimeleri rastgele sırala
+                    self.words = self.filterWords(allWords)
+                    self.words.shuffle()
+                    self.words = Array(self.words.prefix(self.quizSize)) // Quiz boyutuna göre sınırla
                     self.setOptions()
                 }
             }
+    }
+    
+    func filterWords(_ allWords: [Word]) -> [Word] {
+        // Daha önce doğru cevaplanan kelimeleri filtrele
+        let filteredWords = allWords.filter { word in
+            return !correctWordIds.contains(word.id ?? "")
+        }
+        return filteredWords
     }
     
     var currentWord: Word? {
@@ -58,6 +89,7 @@ class QuizViewViewModel: ObservableObject {
         
         if answer == currentWord.turkish {
             correctAnswers += 1
+            markWordAsCorrect(currentWord)
         }
         
         if currentWordIndex < words.count - 1 {
@@ -65,6 +97,21 @@ class QuizViewViewModel: ObservableObject {
             setOptions()
         } else {
             endQuiz()
+        }
+    }
+    
+    func markWordAsCorrect(_ word: Word) {
+        let db = Firestore.firestore()
+        var updatedWord = word
+        updatedWord.isLearning = true
+        updatedWord.replyDate = Date()
+        if let id = updatedWord.id {
+            do {
+                try db.collection("words").document(id).setData(from: updatedWord)
+                correctWordIds.insert(id) // Doğru cevaplanan kelime kimliğini ekle
+            } catch {
+                print("Error updating word: \(error.localizedDescription)")
+            }
         }
     }
     
@@ -77,8 +124,7 @@ class QuizViewViewModel: ObservableObject {
     func resetQuiz() {
         currentWordIndex = 0
         correctAnswers = 0
-        words.shuffle()
-        setOptions()
+        fetchWords()
     }
     
     private func saveQuizScore() {

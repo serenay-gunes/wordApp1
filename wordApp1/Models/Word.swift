@@ -5,7 +5,6 @@
 //  Created by Serenay Güneş on 22.05.2024.
 //
 
-
 import Foundation
 import FirebaseFirestoreSwift
 
@@ -18,4 +17,7 @@ struct Word: Identifiable, Codable {
     var audioUrl: String?
     var correctCount: Int = 0
     var lastCorrectDate: Date?
+    var isLearning: Bool = false
+    var replyDate: Date?
+  
 }
